@@ -83,7 +83,7 @@ loginroute.post('/login', async (req, res) => {
         return res.send("Invalid username or password. Please signup first");
       }
   
-      if (user.password === password) { // In a real-world scenario, you should hash and compare passwords
+      if (user.password === password) { 
         req.session.username = username;
         req.session.favourites = user.favourites;
         return res.redirect('/home');

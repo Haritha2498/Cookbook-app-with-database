@@ -17,6 +17,7 @@ app.use(session({
 
 app.use('/', pageroute, loginroute, apiroute);
 
-app.listen(3000, () => {
+
+app.listen(3001, () => {
     console.log("The server is starting at port 3000")
 })
